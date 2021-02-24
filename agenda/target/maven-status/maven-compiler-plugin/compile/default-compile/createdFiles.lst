@@ -1,0 +1,7 @@
+com\br\Application.class
+com\br\service\AgendaService.class
+com\br\model\Agenda.class
+com\br\controller\AgendaController.class
+com\br\repository\AgendaRepository.class
+com\br\AppException.class
+com\br\model\User.class

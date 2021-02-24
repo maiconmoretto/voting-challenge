@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="74bd4761-25ac-4150-8cbc-93625e19af41" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1owaWB4mXKQ5CMtjvN5Ydr6mJdH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/agenda/src/test/java/com/br" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\agenda\src\test\java\com\br" />
+      <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\agenda\src\main\java\com\br\repository" />
+      <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\agenda\src\main\java\com\br\service" />
+      <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\agenda\src\main\java\com\br\model" />
+      <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\agenda\src\main\java\com\br\controller" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74bd4761-25ac-4150-8cbc-93625e19af41" name="Default Changelist" comment="" />
+      <created>1614200136015</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614200136015</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="634" y="154" key="FileChooserDialogImpl" timestamp="1614200506222">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="634" y="154" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614200506222" />
+    <state x="453" y="0" width="1009" height="1470" key="search.everywhere.popup" timestamp="1614208135340">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="453" y="0" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614208135340" />
+  </component>
+</project>

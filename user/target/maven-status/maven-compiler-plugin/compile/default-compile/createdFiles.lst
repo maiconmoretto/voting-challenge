@@ -1,0 +1,6 @@
+com\br\controller\UserController.class
+com\br\Application.class
+com\br\repository\UserRepository.class
+com\br\service\UserService.class
+com\br\AppException.class
+com\br\model\User.class

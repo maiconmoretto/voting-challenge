@@ -1,0 +1,44 @@
+version: '3.1'
+
+services:
+
+  docker-mysql-user:
+    restart: always
+    container_name: docker-mysql-user
+    image: mysql
+    environment:
+      MYSQL_DATABASE: user
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_HOST: '%'
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
+    ports:
+      - "6034:3306"
+
+  docker-mysql-voting:
+    restart: always
+    container_name: docker-mysql-voting
+    image: mysql
+    environment:
+      MYSQL_DATABASE: voting
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_HOST: '%'
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
+    ports:
+      - "6035:3306"
+
+  docker-mysql-agenda:
+    restart: always
+    container_name: docker-mysql-agenda
+    image: mysql
+    environment:
+      MYSQL_DATABASE: agenda
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_HOST: '%'
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
+    ports:
+      - "6036:3306"
+
+
