@@ -1,6 +1,9 @@
+com\br\model\UserDTO.class
 com\br\model\Voting.class
 com\br\Application.class
 com\br\service\VotingService.class
+com\br\request\VotingRequest.class
 com\br\controller\VotingController.class
+com\br\service\UserServiceClient.class
 com\br\AppException.class
 com\br\repository\VotingRepository.class
