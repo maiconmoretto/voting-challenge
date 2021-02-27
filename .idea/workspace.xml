@@ -21,46 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="74bd4761-25ac-4150-8cbc-93625e19af41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/db_files/Dump20200607/assemblies_agenda.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/db_files/Dump20200607/assemblies_user.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/db_files/Dump20200607/assemblies_voting.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/db_files/create_schema_and_tables_script/create_schema_and_tables_script.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/db_files/diagram/er_diagram_asembles.mwb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/db_files/diagram/er_diagram_asembles.mwb.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/postman_collection/Assemblies.postman_collection.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/controller/AgendaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/controller/VotingController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/model/Agenda.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/model/Voting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/repository/AgendaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/repository/VotingRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/service/AgendaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/service/VotingService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/test/java/com/br/AgendaControllerTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/test/java/com/br/AgendaRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/test/java/com/br/UserControllerTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/test/java/com/br/UserRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/test/java/com/br/VotingControllerTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/test/java/com/br/VotingRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/voting/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/src/main/java/com/br/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/voting/src/main/java/com/br/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/voting/src/main/java/com/br/controller/VotingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/voting/src/main/java/com/br/controller/VotingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/voting/src/main/java/com/br/service/VotingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/voting/src/main/java/com/br/service/VotingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/voting/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/voting/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/voting/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/classes/com/br/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/controller/VotingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/classes/com/br/controller/VotingController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/service/VotingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/classes/com/br/service/VotingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/user-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/user-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

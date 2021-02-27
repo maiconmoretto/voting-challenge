@@ -47,7 +47,7 @@ public class VotingService {
         return votingRepository.findById(id).get();
     }
 
-    public ResponseEntity<String> save(VotingRequest votingRequest) throws Exception {
+    public ResponseEntity<String> save(VotingRequest votingRequest) throws ResponseStatusException {
 
 
         Voting voting = new Voting();
@@ -55,6 +55,10 @@ public class VotingService {
         voting.setIdUser(votingRequest.getIdUser());
         voting.setIdAgenda(votingRequest.getIdAgenda());
         voting.setCreatedAt("agora");
+
+
+
+
         this.validate(voting);
 
 /*		Agenda agenda = agendaRepository.findById(voting.getIdAgenda()).get();

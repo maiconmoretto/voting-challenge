@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.br.request.VotingRequest;
 import com.br.model.Voting;
 import com.br.service.VotingService;
+import org.springframework.web.server.ResponseStatusException;
 
 @RestController
 public class VotingController {
@@ -41,7 +42,7 @@ public class VotingController {
 
     @PostMapping(path = "/api/v1/voting/")
     public @ResponseBody
-    ResponseEntity save(@RequestBody VotingRequest votingRequest) throws Exception {
+    ResponseEntity save(@RequestBody VotingRequest votingRequest) throws ResponseStatusException {
         return service.save(votingRequest);
     }
 
