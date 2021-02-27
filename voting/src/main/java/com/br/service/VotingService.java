@@ -2,22 +2,18 @@ package com.br.service;
 
 import java.util.List;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import com.br.model.UserDTO;
+import com.br.model.AgendaDTO;
 import com.br.model.Voting;
 import feign.FeignException;
 import org.springframework.web.server.ResponseStatusException;
 import com.br.request.VotingRequest;
 import com.br.AppException;
-/*import com.br.model.Agenda;
-import com.br.model.User;*/
 import com.br.model.Voting;
-/*import com.br.repository.AgendaRepository;
-import com.br.repository.UserRepository;*/
 import com.br.repository.VotingRepository;
 import org.springframework.web.client.RestTemplate;
 
@@ -30,14 +26,10 @@ public class VotingService {
     @Autowired
     private UserServiceClient userServiceClient;
 
-	/*@Autowired
-	private AgendaRepository agendaRepository;*/
+    @Autowired
+    private AgendaServiceClient agendaServiceClient;
 
-/*	@Autowired
-	private UserRepository userRepository;*/
 
-/*	@Autowired
-	private UserService userService;*/
 
     public List<Voting> findAll() {
         return (List<Voting>) votingRepository.findAll();
@@ -49,15 +41,11 @@ public class VotingService {
 
     public ResponseEntity<String> save(VotingRequest votingRequest) throws ResponseStatusException {
 
-
         Voting voting = new Voting();
         voting.setVote(votingRequest.getVote());
         voting.setIdUser(votingRequest.getIdUser());
         voting.setIdAgenda(votingRequest.getIdAgenda());
         voting.setCreatedAt("agora");
-
-
-
 
         this.validate(voting);
 
@@ -75,22 +63,40 @@ public class VotingService {
 
     public void validate(Voting voting) {
         UserDTO userDTO;
-        System.out.println("chegou aqui 33333 ----------------------------------------");
-        System.out.println(voting);
+        AgendaDTO agendaDTO;
         try {
             userDTO = userServiceClient.findById(voting.getIdUser());
         } catch (FeignException ex) {
             if (HttpStatus.NOT_FOUND.value() == 404) {
-                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Nao existe usuario com id: " + voting.getIdUser());
+                throw new ResponseStatusException(
+                        HttpStatus.BAD_REQUEST,
+                        "No user found with the id: " + voting.getIdUser()
+                );
             } else {
-                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Sistema indisponível no momento." + HttpStatus.NOT_FOUND.value()) ;
+                throw new ResponseStatusException(
+                        HttpStatus.BAD_REQUEST,
+                        "System unavaible." + HttpStatus.NOT_FOUND.value()
+                ) ;
             }
         }
 
-/*		if (!userRepository.findById(voting.getIdUser()).isPresent()) {
-			throw new AppException(404, "No User found with id " + voting.getIdUser());
-		}
+        try {
+            agendaDTO = agendaServiceClient.findById(voting.getIdAgenda());
+        } catch (FeignException ex) {
+            if (HttpStatus.NOT_FOUND.value() == 404) {
+                throw new ResponseStatusException(
+                        HttpStatus.BAD_REQUEST,
+                        "No Agenda found with id: " + voting.getIdAgenda()
+                );
+            } else {
+                throw new ResponseStatusException(
+                        HttpStatus.BAD_REQUEST,
+                        "System unavaible." + HttpStatus.NOT_FOUND.value()
+                ) ;
+            }
+        }
 
+/*
 		if (!agendaRepository.findById(voting.getIdAgenda()).isPresent()) {
 			throw new AppException(404, "No Agenda found with id " + voting.getIdAgenda());
 		}
