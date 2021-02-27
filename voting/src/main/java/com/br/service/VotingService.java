@@ -80,10 +80,10 @@ public class VotingService {
         try {
             userDTO = userServiceClient.findById(voting.getIdUser());
         } catch (FeignException ex) {
-            if (HttpStatus.NOT_FOUND.value() == ex.status()) {
+            if (HttpStatus.NOT_FOUND.value() == 404) {
                 throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Nao existe usuario com id: " + voting.getIdUser());
             } else {
-                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Sistema indisponível no momento.");
+                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Sistema indisponível no momento." + HttpStatus.NOT_FOUND.value()) ;
             }
         }
 

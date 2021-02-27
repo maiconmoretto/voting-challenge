@@ -21,12 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="74bd4761-25ac-4150-8cbc-93625e19af41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/src/main/java/com/br/controller/VotingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/voting/src/main/java/com/br/controller/VotingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/voting/src/main/java/com/br/service/VotingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/voting/src/main/java/com/br/service/VotingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/voting/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/controller/VotingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/classes/com/br/controller/VotingController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/service/VotingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/classes/com/br/service/VotingService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
