@@ -1,4 +1,4 @@
-/*
+
 package com.br;
 
 import static org.junit.Assert.assertEquals;
@@ -60,14 +60,14 @@ public class UserRepositoryTest {
 
 	@Test
 	public void deleteById() {
-		User user = new User("User 1", "01-01-01", "11111111111");
+		User user = new User();
 		userRepository.deleteById(user.getId());
 		verify(userRepository, times(1)).deleteById(user.getId());
 	}
 
 	@Test
 	public void save() {				
-		User user = new User("User 1", "01-01-01", "11111111111");
+		User user = new User();
 		when(userRepository.save(user)).thenReturn(user);
 		User result = userRepository.save(user);
 		assertEquals("User 1", result.getName());
@@ -77,7 +77,7 @@ public class UserRepositoryTest {
 	
 	@Test
 	public void update() {				
-		User user = new User("User 1", "01-01-01", "11111111111");
+		User user = new User();
 		when(userRepository.save(user)).thenReturn(user);
 		User result = userRepository.save(user);
 		assertEquals("User 1", result.getName());
@@ -87,11 +87,11 @@ public class UserRepositoryTest {
 	
 	@Test
 	public void findById() {				
-		Optional<User> user = Optional.of(new User("User 1", "01-01-01", "11111111111"));
+		Optional<User> user = Optional.of(new User());
 		when(userRepository.findById(1)).thenReturn(user);
 		Optional<User> result = userRepository.findById(1);
 		assertEquals("User 1", result.get().getName());
 		assertEquals("01-01-01", result.get().getCreatedAt());
 		assertEquals("11111111111", result.get().getCpf());
 	}	
-}*/
+}
