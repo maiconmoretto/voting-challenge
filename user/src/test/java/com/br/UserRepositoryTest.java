@@ -17,7 +17,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
+import org.springframework.http.ResponseEntity;
 import com.br.model.User;
 import com.br.repository.UserRepository;
 
@@ -61,7 +61,7 @@ public class UserRepositoryTest {
 	@Test
 	public void deleteById() {
 		User user = new User();
-		userRepository.deleteById(user.getId());
+		user.setId(1);
 		verify(userRepository, times(1)).deleteById(user.getId());
 	}
 

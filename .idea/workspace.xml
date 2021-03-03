@@ -21,9 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="74bd4761-25ac-4150-8cbc-93625e19af41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agenda/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/src/main/java/com/br/service/VotingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/voting/src/main/java/com/br/service/VotingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/voting/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/test/java/com/br/UserControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/test/java/com/br/UserControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/test/java/com/br/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/test/java/com/br/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/surefire-reports/TEST-com.br.UserControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/surefire-reports/TEST-com.br.UserControllerTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/surefire-reports/com.br.UserControllerTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/surefire-reports/com.br.UserControllerTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/test-classes/com/br/UserControllerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/test-classes/com/br/UserControllerTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/test-classes/com/br/UserRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/test-classes/com/br/UserRepositoryTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +50,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/voting/src/main/java/com/br/service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -114,10 +117,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="631" y="205" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614374698116" />
-    <state x="634" y="154" key="FileChooserDialogImpl" timestamp="1614374863270">
+    <state x="634" y="154" key="FileChooserDialogImpl" timestamp="1614601943196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="634" y="154" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614374863270" />
+    <state x="634" y="154" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614601943196" />
     <state width="1853" height="312" key="GridCell.Tab.0.bottom" timestamp="1614375389675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -150,9 +153,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1853" height="312" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614375389675" />
-    <state x="453" y="0" width="1009" height="1470" key="search.everywhere.popup" timestamp="1614433513137">
+    <state x="453" y="0" width="1009" height="1470" key="search.everywhere.popup" timestamp="1614727475411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="453" y="0" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614433513137" />
+    <state x="453" y="0" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614727475411" />
   </component>
 </project>

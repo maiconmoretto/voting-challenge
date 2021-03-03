@@ -60,6 +60,12 @@ public class UserControllerTests {
 		mvc.perform(MockMvcRequestBuilders.put("/api/v1/user/").content(asJsonString(user))
 				.contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON));
 	}
+
+	@Test
+	public void delete() throws Exception {
+		mvc.perform(MockMvcRequestBuilders.delete("/api/v1/user/").content(asJsonString(user))
+				.contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON));
+	}
 	
 	public static String asJsonString(final Object obj) {
 	    try {
