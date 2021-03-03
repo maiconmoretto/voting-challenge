@@ -1,4 +1,4 @@
-/*
+
 package com.br;
 
 import static org.junit.Assert.assertEquals;
@@ -33,24 +33,18 @@ public class AgendaRepositoryTest {
 	@Before
 	public void setup() {
 		MockitoAnnotations.initMocks(this);
-		agenda = new Agenda("agenda 1", "01-01-01", 60, 0, 0);
+		agenda = new Agenda();
 	}
 
 	@Test
 	public void findAll() {
 		List<Agenda> agendaList = new ArrayList<Agenda>();
-		agendaList.add(new Agenda("agenda 1", "01-01-01", 60, 0, 0));
-		agendaList.add(new Agenda("agenda 2", "02-02-02", 120, 0, 0));
-		agendaList.add(new Agenda("agenda 3", "03-03-03", 180, 0, 0));
+		agendaList.add(new Agenda());
+		agendaList.add(new Agenda());
+		agendaList.add(new Agenda());
 		when(agendaRepository.findAll()).thenReturn(agendaList);
 		List<Agenda> result = agendaRepository.findAll();
 		assertEquals(3, result.size());
-	}
-
-	@Test
-	public void deleteById() {
-		agendaRepository.deleteById(agenda.getId());
-		verify(agendaRepository, times(1)).deleteById(agenda.getId());
 	}
 
 	@Test
@@ -77,7 +71,7 @@ public class AgendaRepositoryTest {
 
 	@Test
 	public void findById() {
-		Optional<Agenda> agenda = Optional.of(new Agenda("agenda 1", "01-01-01", 60, 0, 0));
+		Optional<Agenda> agenda = Optional.of(new Agenda());
 		when(agendaRepository.findById(1)).thenReturn(agenda);
 		Optional<Agenda> result = agendaRepository.findById(1);
 		assertEquals("agenda 1", result.get().getDescription());
@@ -87,4 +81,12 @@ public class AgendaRepositoryTest {
 		assertEquals(0, result.get().getSim());
 	}
 
-}*/
+	@Test
+	public void deleteById() {
+		Agenda agenda = new Agenda();
+		agenda.setId(1);
+		verify(agendaRepository, times(1)).deleteById(agenda.getId());
+	}
+
+
+}
