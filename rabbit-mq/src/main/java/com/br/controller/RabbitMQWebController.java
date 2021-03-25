@@ -8,42 +8,30 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import com.br.service.Sender;
-import com.br.service.Consumer;
+import com.br.service.RabbitMQWebService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 
 @RestController
 @RequestMapping(value = "/api/v1/rabbitmq/")
 public class RabbitMQWebController {
 
-/*	@Autowired
-	AgendaService agendaService;
-
 	@Autowired
-	Sender sender;*/
-	
-	@Autowired
-	Consumer consumer;
+	private RabbitMQWebService service;
 
 	@GetMapping(value = "/producer")
 	public void producer(@RequestParam("id") int id) throws IOException, TimeoutException {
-		//Agenda agenda = agendaService.findAgendaClosedById(id);
-		
-		//sender.send(agenda);
+		service.producer(id);
 	}
 	
 	@GetMapping(value = "/producer/all/")
 	public void producerAll() throws IOException, TimeoutException {
-		//List<Agenda> agendasClosed = agendaService.agendasClosed();
-		
-	/*	for(Agenda agenda: agendasClosed) {
-			sender.send(agenda);
-		}*/
+		service.producerAll();
 	}
 	
 	@GetMapping(value = "/consumer")
 	public void producer() throws IOException, TimeoutException {		
-		consumer.consume();
+		service.producer();
 	}
 	
 }

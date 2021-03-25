@@ -1,6 +1,9 @@
+com\br\service\AgendaServiceClient.class
 com\br\Application.class
 com\br\service\Consumer.class
+com\br\model\AgendaDTO.class
 com\br\controller\RabbitMQWebController.class
 com\br\ScheduledTasks.class
+com\br\service\RabbitMQWebService.class
 com\br\service\Sender.class
 com\br\AppException.class

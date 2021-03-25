@@ -20,159 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74bd4761-25ac-4150-8cbc-93625e19af41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rabbit-mq/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbit-mq/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbit-mq/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbit-mq/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/model/AgendaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/service/AgendaServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/service/RabbitMQWebService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.attach_pid13704" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/.attach_pid13704" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.attach_pid16712" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/.attach_pid16712" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.attach_pid20617" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/.attach_pid20617" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.attach_pid4424" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/.attach_pid4424" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.attach_pid9363" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/.attach_pid9363" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_35.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_35.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_assertj_assertj_core_3_16_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_awaitility_awaitility_3_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_hamcrest_hamcrest_library_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_15_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_jboss_jandex_2_1_3_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_mockito_mockito_core_3_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_2_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_2_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_1_5_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_3_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_spring_aop_5_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_spring_beans_5_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_spring_context_5_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_spring_core_5_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_spring_expression_5_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_spring_messaging_5_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_spring_orm_5_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_spring_test_5_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_spring_tx_5_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_spring_web_5_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/asembles.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/AppException.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/AppException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/ScheduledTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/ScheduledTasks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/controller/RabbitMQWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/controller/RabbitMQWebController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/service/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/service/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/java/com/br/service/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/service/Sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/asembles-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/asembles-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/AppException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/ScheduledTasks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/controller/AgendaController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/controller/RabbitMQWebController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/controller/VotingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/model/Agenda.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/model/Voting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/repository/AgendaRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/repository/VotingRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/service/AgendaService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/service/Consumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/service/Sender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/classes/com/br/service/VotingService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assemblies/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/controller/RabbitMQWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/controller/RabbitMQWebController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/target/classes/com/br/AppException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/target/classes/com/br/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,18 +58,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/model" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\rabbit-mq\src\main\java\com\br\controller" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\rabbit-mq\src\main\java\com\br" />
+      <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\rabbit-mq\src\main\java\com\br\model" />
       <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\rabbit-mq\src\main\java\com\br\service" />
+      <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\rabbit-mq\src\main\java\com\br" />
       <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services" />
       <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\voting\src\main\java\com\br\service" />
-      <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\voting\src\main\java\com\br\model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\rabbit-mq\src\main\java\com\br\controller" />
     </key>
   </component>
   <component name="RunManager">
