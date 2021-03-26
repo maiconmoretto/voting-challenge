@@ -46,7 +46,6 @@ public class VotingService {
         voting.setVote(votingRequest.getVote());
         voting.setIdUser(votingRequest.getIdUser());
         voting.setIdAgenda(votingRequest.getIdAgenda());
-        voting.setCreatedAt("agora");
 
         this.validate(voting);
 
@@ -118,20 +117,12 @@ public class VotingService {
             }
         }
 
-
-
+        if (!voting.getVote().equals("Sim") && !voting.getVote().equals("Não")) {
+            throw new AppException(404, "The vote is only Sim or Não");
+        }
 
 /*
 
-
-		Optional<Agenda> agendaOpen = agendaRepository.agendaOpen(voting.getIdAgenda());
-		if (agendaOpen.isEmpty()) {
-			throw new AppException(404, "This agenda is already closed for voting");
-		}
-
-		if (!voting.getVote().equals("Sim") && !voting.getVote().equals("Não")) {
-			throw new AppException(404, "The vote is only Sim or Não");
-		}
 		
 		Optional<Voting> userAlreadyVote = votingRepository.userAlreadyVote(voting.getIdAgenda(), voting.getIdUser());
 		if (userAlreadyVote.isPresent()) {
