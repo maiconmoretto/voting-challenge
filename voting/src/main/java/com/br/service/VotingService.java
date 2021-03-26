@@ -16,6 +16,7 @@ import com.br.AppException;
 import com.br.model.Voting;
 import com.br.repository.VotingRepository;
 import org.springframework.web.client.RestTemplate;
+import java.util.Optional;
 
 @Service
 public class VotingService {
@@ -96,10 +97,32 @@ public class VotingService {
             }
         }
 
+
+
+        try {
+            AgendaDTO agendaOpen = agendaServiceClient.agendaOpen(voting.getIdAgenda());
+            if (agendaOpen == null) {
+                throw new AppException(404, "This agenda is already closed for voting");
+            }
+        } catch (FeignException ex) {
+            if (HttpStatus.NOT_FOUND.value() == 404) {
+                throw new ResponseStatusException(
+                        HttpStatus.BAD_REQUEST,
+                        "Error due find if agenda is open: " + voting.getIdAgenda()
+                );
+            } else {
+                throw new ResponseStatusException(
+                        HttpStatus.BAD_REQUEST,
+                        "System unavaible." + HttpStatus.NOT_FOUND.value()
+                ) ;
+            }
+        }
+
+
+
+
 /*
-		if (!agendaRepository.findById(voting.getIdAgenda()).isPresent()) {
-			throw new AppException(404, "No Agenda found with id " + voting.getIdAgenda());
-		}
+
 
 		Optional<Agenda> agendaOpen = agendaRepository.agendaOpen(voting.getIdAgenda());
 		if (agendaOpen.isEmpty()) {

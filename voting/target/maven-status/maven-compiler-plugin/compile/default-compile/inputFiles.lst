@@ -4,6 +4,8 @@ C:\Users\maico\Documents\programacao\assembles-micro-services\voting\src\main\ja
 C:\Users\maico\Documents\programacao\assembles-micro-services\voting\src\main\java\com\br\model\UserDTO.java
 C:\Users\maico\Documents\programacao\assembles-micro-services\voting\src\main\java\com\br\request\VotingRequest.java
 C:\Users\maico\Documents\programacao\assembles-micro-services\voting\src\main\java\com\br\AppException.java
+C:\Users\maico\Documents\programacao\assembles-micro-services\voting\src\main\java\com\br\service\AgendaServiceClient.java
+C:\Users\maico\Documents\programacao\assembles-micro-services\voting\src\main\java\com\br\model\AgendaDTO.java
 C:\Users\maico\Documents\programacao\assembles-micro-services\voting\src\main\java\com\br\service\VotingService.java
 C:\Users\maico\Documents\programacao\assembles-micro-services\voting\src\main\java\com\br\model\Voting.java
 C:\Users\maico\Documents\programacao\assembles-micro-services\voting\src\main\java\com\br\service\UserServiceClient.java

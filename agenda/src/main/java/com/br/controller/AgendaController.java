@@ -54,4 +54,9 @@ public class AgendaController {
 	public List<Agenda> agendasClosed() {
 		return service.agendasClosed();
 	}
+
+	@GetMapping("/api/v1/agenda-open/{idAgenda}")
+	public Agenda agendaOpen(@PathVariable int idAgenda) {
+		return service.agendaOpen(idAgenda);
+	}
 }

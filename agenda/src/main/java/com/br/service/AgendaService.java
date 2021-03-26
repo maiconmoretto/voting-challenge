@@ -48,16 +48,16 @@ public class AgendaService {
 		return new ResponseEntity<>("Agenda successfully deleted", HttpStatus.OK);
 	}
 
-	public Optional<Agenda> agendaOpen(int idAgenda) {
-		return repository.agendaOpen(idAgenda);
-	}
-
 	public List<Agenda> agendasClosed() {
 		return repository.agendasClosed();
 	}
 
 	public Agenda findAgendaClosedById(int id) {
 		return repository.findAgendaClosedById(id);
+	}
+
+	public Agenda agendaOpen(int idAgenda) {
+		return repository.agendaOpen(idAgenda);
 	}
 
 }
