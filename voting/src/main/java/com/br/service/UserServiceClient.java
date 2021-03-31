@@ -11,5 +11,4 @@ public interface UserServiceClient {
 
     @GetMapping("/api/v1/user/{id}")
     UserDTO findById(@PathVariable int id);
-
 }

@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 
 import com.br.repository.AgendaRepository;
 import com.br.model.Agenda;
-import com.br.model.User;
 
 @Service
 public class AgendaService {
@@ -26,21 +25,23 @@ public class AgendaService {
 		return repository.findById(id).get();
 	}
 
-	public ResponseEntity<String> save(Agenda agenda) {
+	public Agenda save(Agenda agenda) {
 		if (agenda.getDuration() == 0) {
 			agenda.setDuration(60);
 		}
-		repository.save(agenda);
-		return new ResponseEntity<>("Agenda successfully registered", HttpStatus.CREATED);
+		return repository.save(agenda);
+		//return new ResponseEntity<>("Agenda successfully registered", HttpStatus.CREATED);
 	}
 
-	public ResponseEntity<String> update(Agenda agenda) {
+	public Agenda update(Agenda agenda) throws  Exception {
+		System.out.println("-------------------------  " + agenda.toString());
 		Optional<Agenda> agendaExist = repository.findById(agenda.getId());
 		if (!agendaExist.isPresent()) {
-			return new ResponseEntity<>("Agenda does not exist", HttpStatus.BAD_REQUEST);
+			//return new ResponseEntity<>("Agenda does not exist", HttpStatus.BAD_REQUEST);
+			throw new Exception("Agenda does not exist");
 		}
-		repository.save(agenda);
-		return new ResponseEntity<>("Agenda successfully updated", HttpStatus.OK);
+		return repository.save(agenda);
+		//return new ResponseEntity<>("Agenda successfully updated", HttpStatus.OK);
 	}
 
 	public ResponseEntity<String> deleteById(int id) {

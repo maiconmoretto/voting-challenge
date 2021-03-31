@@ -4,4 +4,3 @@ com\br\model\Agenda.class
 com\br\controller\AgendaController.class
 com\br\repository\AgendaRepository.class
 com\br\AppException.class
-com\br\model\User.class

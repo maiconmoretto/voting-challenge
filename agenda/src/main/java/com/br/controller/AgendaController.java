@@ -36,12 +36,12 @@ public class AgendaController {
 	}
 
 	@PostMapping(path = "/api/v1/agenda/")
-	public @ResponseBody ResponseEntity save(@RequestBody Agenda agenda) {
+	public Agenda saveAgenda(@RequestBody Agenda agenda) {
 		return service.save(agenda);
 	}
 
-	@PutMapping(value = "/api/v1/agenda/{id}")
-	public ResponseEntity<String> update(@RequestBody Agenda agenda) {
+	@PutMapping(value = "/api/v1/agenda/")
+	public Agenda update(@RequestBody Agenda agenda) throws  Exception {
 		return service.update(agenda);
 	}
 

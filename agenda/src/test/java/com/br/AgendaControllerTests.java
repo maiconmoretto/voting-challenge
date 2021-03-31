@@ -11,10 +11,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import com.br.model.User;
 import com.fasterxml.jackson.databind.Module.SetupContext;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
+import com.br.model.Agenda;
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -23,11 +23,11 @@ public class AgendaControllerTests {
     @Autowired
     private MockMvc mvc;
 
-    private User agenda;
+    private Agenda agenda;
 
     @Before
     public void setup() {
-        User agenda = new User();
+        Agenda agenda = new Agenda();
     }
 
     @Test

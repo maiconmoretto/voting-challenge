@@ -21,19 +21,31 @@
   <component name="ChangeListManager">
     <list default="true" id="74bd4761-25ac-4150-8cbc-93625e19af41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/src/main/java/com/br/controller/AgendaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/src/main/java/com/br/controller/AgendaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/src/main/java/com/br/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/src/main/java/com/br/service/AgendaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/src/main/java/com/br/service/AgendaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/src/test/java/com/br/AgendaControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/src/test/java/com/br/AgendaControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/target/classes/com/br/controller/AgendaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/target/classes/com/br/controller/AgendaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/target/classes/com/br/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/target/classes/com/br/service/AgendaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/target/classes/com/br/service/AgendaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/target/test-classes/com/br/AgendaControllerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/target/test-classes/com/br/AgendaControllerTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/service/AgendaServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/service/AgendaServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/test/java/com/br/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/test/java/com/br/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/classes/com/br/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/br/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/test-classes/com/br/UserRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/test-classes/com/br/UserRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting/src/main/java/com/br/model/AgendaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/voting/src/main/java/com/br/model/AgendaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting/src/main/java/com/br/model/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/voting/src/main/java/com/br/model/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting/src/main/java/com/br/service/AgendaServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/voting/src/main/java/com/br/service/AgendaServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting/src/main/java/com/br/service/UserServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/voting/src/main/java/com/br/service/UserServiceClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/voting/src/main/java/com/br/service/VotingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/voting/src/main/java/com/br/service/VotingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/AppException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/controller/VotingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/model/AgendaDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/model/UserDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/model/Voting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/repository/VotingRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/request/VotingRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/service/AgendaServiceClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/service/UserServiceClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/service/VotingService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/model/AgendaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/classes/com/br/model/AgendaDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/model/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/classes/com/br/model/UserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/service/AgendaServiceClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/classes/com/br/service/AgendaServiceClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting/target/classes/com/br/service/VotingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/classes/com/br/service/VotingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting/target/voting-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/voting-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/voting/target/voting-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/voting/target/voting-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616771880973</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added validation to vote.">
+      <created>1616772414110</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616772414110</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,7 +155,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created service for rabbitMQ.&#10;Added comunication between micro service agenda." />
     <MESSAGE value="Added comunication between micro service agenda to find if agenda is open.&#10;Added createdAte to type LocalDateTime." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added comunication between micro service agenda to find if agenda is open.&#10;Added createdAte to type LocalDateTime." />
+    <MESSAGE value="Added validation to vote." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added validation to vote." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -149,14 +169,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="631" y="205" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614374698116" />
-    <state x="292" y="0" key="CommitChangelistDialog2" timestamp="1616771877053">
+    <state x="292" y="0" key="CommitChangelistDialog2" timestamp="1616772413531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="292" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1616771877053" />
-    <state x="634" y="154" key="FileChooserDialogImpl" timestamp="1616760224024">
+    <state x="292" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1616772413531" />
+    <state x="634" y="154" key="FileChooserDialogImpl" timestamp="1617216209411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="634" y="154" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1616760224024" />
+    <state x="634" y="154" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617216209411" />
     <state width="1853" height="312" key="GridCell.Tab.0.bottom" timestamp="1614375389675">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -189,24 +209,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1853" height="312" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614375389675" />
-    <state x="352" y="121" key="Vcs.Push.Dialog.v2" timestamp="1616771905353">
+    <state x="352" y="121" key="Vcs.Push.Dialog.v2" timestamp="1616772419318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="352" y="121" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1616771905353" />
-    <state x="453" y="0" width="1009" height="1470" key="search.everywhere.popup" timestamp="1614727475411">
+    <state x="352" y="121" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1616772419318" />
+    <state x="453" y="0" width="1009" height="1470" key="search.everywhere.popup" timestamp="1617230167863">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="453" y="0" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614727475411" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/voting/src/main/java/com/br/service/VotingService.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="453" y="0" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617230167863" />
   </component>
 </project>

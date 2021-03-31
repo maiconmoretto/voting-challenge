@@ -17,6 +17,7 @@ import com.br.model.Voting;
 import com.br.repository.VotingRepository;
 import org.springframework.web.client.RestTemplate;
 import java.util.Optional;
+import com.br.service.UserServiceClient;
 
 @Service
 public class VotingService {
@@ -29,8 +30,6 @@ public class VotingService {
 
     @Autowired
     private AgendaServiceClient agendaServiceClient;
-
-
 
     public List<Voting> findAll() {
         return (List<Voting>) votingRepository.findAll();
@@ -49,15 +48,34 @@ public class VotingService {
 
         this.validate(voting);
 
-/*		Agenda agenda = agendaRepository.findById(voting.getIdAgenda()).get();
-		if (voting.getVote().equals("Sim")) {
-			agenda.setSim(agenda.getSim() + 1);
-		} else {
-			agenda.setNao(agenda.getNao() + 1);
-		}
-		agendaRepository.save(agenda);
+        AgendaDTO agendaDTO;
 
-		votingRepository.save(voting);*/
+        try {
+            agendaDTO = agendaServiceClient.findById(voting.getIdAgenda());
+            if (voting.getVote().equals("Sim")) {
+                agendaDTO.setSim(agendaDTO.getSim() + 1);
+            } else {
+                agendaDTO.setNao(agendaDTO.getNao() + 1);
+            }
+            System.out.println("aqui ---------------------------------");
+            System.out.println(agendaDTO);
+            agendaServiceClient.update(agendaDTO);
+        } catch (FeignException ex) {
+            if (HttpStatus.NOT_FOUND.value() == 404) {
+                throw new ResponseStatusException(
+                        HttpStatus.BAD_REQUEST,
+                        "No Agenda found with id: " + voting.getIdAgenda()
+                );
+            } else {
+                throw new ResponseStatusException(
+                        HttpStatus.BAD_REQUEST,
+                        "System unavaible." + HttpStatus.NOT_FOUND.value()
+                ) ;
+            }
+        }
+
+        votingRepository.save(voting);
+
         return new ResponseEntity<>("Voting successfully registered", HttpStatus.CREATED);
     }
 
@@ -121,13 +139,11 @@ public class VotingService {
             throw new AppException(404, "The vote is only Sim or Não");
         }
 
-/*
+        Optional<Voting> userAlreadyVote = votingRepository.userAlreadyVote(voting.getIdAgenda(), voting.getIdUser());
 
-		
-		Optional<Voting> userAlreadyVote = votingRepository.userAlreadyVote(voting.getIdAgenda(), voting.getIdUser());
-		if (userAlreadyVote.isPresent()) {
-			throw new AppException(404, "This user already voted");
-		}*/
+        if (userAlreadyVote.isPresent()) {
+            throw new AppException(404, "This user already voted");
+        }
     }
 
     public ResponseEntity<String> update(Voting voting) {

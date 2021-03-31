@@ -20,6 +20,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.http.ResponseEntity;
 import com.br.model.User;
 import com.br.repository.UserRepository;
+import java.time.LocalDateTime;
+
 
 @RunWith(SpringJUnit4ClassRunner.class)
 public class UserRepositoryTest {
@@ -36,17 +38,17 @@ public class UserRepositoryTest {
 		MockitoAnnotations.initMocks(this);
 		User joao = new User();
 		joao.setCpf("11111111111");
-		joao.setCreatedAt("01-01-01 01:01:01");
+		joao.setCreatedAt(LocalDateTime.now());
 		joao.setName("joao");
 		userList.add(joao);
 		User maria = new User();
 		maria.setCpf("22222222222");
-		maria.setCreatedAt("02-02-02 02:02:02");
+		maria.setCreatedAt(LocalDateTime.now());
 		maria.setName("maria");
 		userList.add(maria);
 		User jose = new User();
 		maria.setCpf("33333333333");
-		maria.setCreatedAt("03-03-03 03:03:03");
+		maria.setCreatedAt(LocalDateTime.now());
 		maria.setName("jose");
 		userList.add(jose);
 	}
