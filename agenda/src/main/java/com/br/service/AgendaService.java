@@ -30,18 +30,14 @@ public class AgendaService {
 			agenda.setDuration(60);
 		}
 		return repository.save(agenda);
-		//return new ResponseEntity<>("Agenda successfully registered", HttpStatus.CREATED);
 	}
 
 	public Agenda update(Agenda agenda) throws  Exception {
-		System.out.println("-------------------------  " + agenda.toString());
 		Optional<Agenda> agendaExist = repository.findById(agenda.getId());
 		if (!agendaExist.isPresent()) {
-			//return new ResponseEntity<>("Agenda does not exist", HttpStatus.BAD_REQUEST);
 			throw new Exception("Agenda does not exist");
 		}
 		return repository.save(agenda);
-		//return new ResponseEntity<>("Agenda successfully updated", HttpStatus.OK);
 	}
 
 	public ResponseEntity<String> deleteById(int id) {

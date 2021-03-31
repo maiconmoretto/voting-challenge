@@ -40,13 +40,13 @@ public class VotingService {
     }
 
     public ResponseEntity<String> save(VotingRequest votingRequest) throws ResponseStatusException {
-
         Voting voting = new Voting();
         voting.setVote(votingRequest.getVote());
         voting.setIdUser(votingRequest.getIdUser());
         voting.setIdAgenda(votingRequest.getIdAgenda());
 
-        this.validate(voting);
+        boolean validateUpdate = false;
+        this.validate(voting, validateUpdate);
 
         AgendaDTO agendaDTO;
 
@@ -57,8 +57,6 @@ public class VotingService {
             } else {
                 agendaDTO.setNao(agendaDTO.getNao() + 1);
             }
-            System.out.println("aqui ---------------------------------");
-            System.out.println(agendaDTO);
             agendaServiceClient.update(agendaDTO);
         } catch (FeignException ex) {
             if (HttpStatus.NOT_FOUND.value() == 404) {
@@ -79,9 +77,10 @@ public class VotingService {
         return new ResponseEntity<>("Voting successfully registered", HttpStatus.CREATED);
     }
 
-    public void validate(Voting voting) {
+    public void validate(Voting voting,boolean validateUpdate) {
         UserDTO userDTO;
         AgendaDTO agendaDTO;
+
         try {
             userDTO = userServiceClient.findById(voting.getIdUser());
         } catch (FeignException ex) {
@@ -114,8 +113,6 @@ public class VotingService {
             }
         }
 
-
-
         try {
             AgendaDTO agendaOpen = agendaServiceClient.agendaOpen(voting.getIdAgenda());
             if (agendaOpen == null) {
@@ -139,30 +136,53 @@ public class VotingService {
             throw new AppException(404, "The vote is only Sim or Não");
         }
 
-        Optional<Voting> userAlreadyVote = votingRepository.userAlreadyVote(voting.getIdAgenda(), voting.getIdUser());
+        if(!validateUpdate) {
+            Optional<Voting> userAlreadyVote = votingRepository.userAlreadyVote(voting.getIdAgenda(), voting.getIdUser());
 
-        if (userAlreadyVote.isPresent()) {
-            throw new AppException(404, "This user already voted");
+            if (userAlreadyVote.isPresent()) {
+                throw new AppException(404, "This user already voted");
+            }
         }
     }
 
     public ResponseEntity<String> update(Voting voting) {
-        this.validate(voting);
+        boolean validateUpdate = true;
+        this.validate(voting, validateUpdate);
+        AgendaDTO agendaDTO;
 
-        Optional<Voting> votingOld = votingRepository.findById(voting.getId());
-        //Agenda agenda = agendaRepository.findById(voting.getIdAgenda()).get();
-/*		if (!voting.getVote().equals(votingOld.get().getVote())) {
-			if (voting.getVote().equals("Sim")) {
-				agenda.setSim(agenda.getSim() + 1);
-				agenda.setNao(agenda.getNao() - 1);
-			} else {
-				agenda.setSim(agenda.getSim() - 1);
-				agenda.setNao(agenda.getNao() + 1);
-			}
-		}
-		agendaRepository.save(agenda);
+        try {
+            agendaDTO = agendaServiceClient.findById(voting.getIdAgenda());
+            if (voting.getVote().equals("Sim")) {
+                agendaDTO.setSim(agendaDTO.getSim() + 1);
+                agendaDTO.setNao(agendaDTO.getNao() - 1);
+            } else {
+                agendaDTO.setNao(agendaDTO.getNao() + 1);
+                agendaDTO.setSim(agendaDTO.getSim() - 1);
+            }
+            agendaServiceClient.update(agendaDTO);
+        } catch (FeignException ex) {
+            if (HttpStatus.NOT_FOUND.value() == 404) {
+                throw new ResponseStatusException(
+                        HttpStatus.BAD_REQUEST,
+                        "No Agenda found with id: " + voting.getIdAgenda()
+                );
+            } else {
+                throw new ResponseStatusException(
+                        HttpStatus.BAD_REQUEST,
+                        "System unavaible." + HttpStatus.NOT_FOUND.value()
+                ) ;
+            }
+        }
 
-		votingRepository.save(voting);*/
+        Optional<Voting> voteOld = votingRepository.findByIdUser(voting.getIdUser());
+        System.out.println(voteOld.toString());
+        Voting newVote = new Voting();
+        newVote.setVote(voting.getVote());
+        newVote.setId(voteOld.get().getId());
+        newVote.setIdAgenda(voteOld.get().getIdAgenda());
+        newVote.setIdUser(voteOld.get().getIdUser());
+
+		votingRepository.save(newVote);
         return new ResponseEntity<>("Voting successfully updated", HttpStatus.CREATED);
     }
 
