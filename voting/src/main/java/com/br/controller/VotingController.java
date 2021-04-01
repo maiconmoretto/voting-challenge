@@ -23,6 +23,8 @@ import com.br.request.VotingRequest;
 import com.br.model.Voting;
 import com.br.service.VotingService;
 import org.springframework.web.server.ResponseStatusException;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
 @RestController
 public class VotingController {
@@ -30,27 +32,32 @@ public class VotingController {
     @Autowired
     private VotingService service;
 
+    @ApiOperation(value = "It will return list of Voting")
     @GetMapping("/api/v1/voting")
     public List<Voting> findAll() {
         return service.findAll();
     }
 
+    @ApiOperation(value = "It will return a Voting by id")
     @GetMapping("/api/v1/voting/{id}")
     public Voting findById(@PathVariable int id) {
         return service.findById(id);
     }
 
+    @ApiOperation(value = "It will save a Voting")
     @PostMapping(path = "/api/v1/voting/")
     public @ResponseBody
     ResponseEntity save(@RequestBody VotingRequest votingRequest) throws ResponseStatusException {
         return service.save(votingRequest);
     }
 
+    @ApiOperation(value = "It will update a Voting")
     @PutMapping(value = "/api/v1/voting/{id}")
     public ResponseEntity<String> update(@RequestBody Voting voting) {
         return service.update(voting);
     }
 
+    @ApiOperation(value = "It will deleve a Voting by id")
     @DeleteMapping(path = "/api/v1/voting/{id}")
     public ResponseEntity<String> deleteById(@PathVariable int id) {
         return service.deleteById(id);
