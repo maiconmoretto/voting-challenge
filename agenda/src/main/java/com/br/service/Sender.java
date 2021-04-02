@@ -3,21 +3,17 @@ package com.br.service;
 import java.io.IOException;
 import org.springframework.stereotype.Service;
 import java.util.concurrent.TimeoutException;
-/*
-
-import org.springframework.amqp.rabbit.annotation.RabbitListener;
-
-
+//import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import com.br.model.Agenda;
 import com.google.gson.GsonBuilder;
 import com.google.gson.Gson;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
-import com.rabbitmq.client.ConnectionFactory;*/
+import com.rabbitmq.client.ConnectionFactory;
 
 @Service
 public class Sender {
-/*
+
 	public void send(Agenda agenda) throws IOException, TimeoutException {
 		ConnectionFactory factory = new ConnectionFactory();
 		try (Connection connection = factory.newConnection()) {
@@ -30,5 +26,5 @@ public class Sender {
 		} catch (IOException e) {
 			throw new IOException(e);
 		}
-	}*/
+	}
 }

@@ -2,20 +2,26 @@ package com.br.service;
 
 import java.util.List;
 import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
+import java.util.concurrent.TimeoutException;
 import com.br.repository.AgendaRepository;
 import com.br.model.Agenda;
+import java.io.IOException;
 
 @Service
 public class AgendaService {
 
 	@Autowired
 	private AgendaRepository repository;
+
+	@Autowired
+	private Sender sender;
+
+	@Autowired
+	private Consumer consumer;
 
 	public List<Agenda> findAll() {
 		return (List<Agenda>) repository.findAll();
@@ -25,10 +31,11 @@ public class AgendaService {
 		return repository.findById(id).get();
 	}
 
-	public Agenda save(Agenda agenda) {
+	public Agenda save(Agenda agenda) throws IOException, TimeoutException  {
 		if (agenda.getDuration() == 0) {
 			agenda.setDuration(60);
 		}
+		sender.send(agenda);
 		return repository.save(agenda);
 	}
 

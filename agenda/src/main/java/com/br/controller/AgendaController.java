@@ -19,6 +19,8 @@ import com.br.model.Agenda;
 import com.br.service.AgendaService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import java.io.IOException;
+import java.util.concurrent.TimeoutException;
 
 @RestController
 public class AgendaController {
@@ -40,7 +42,7 @@ public class AgendaController {
 
 	@ApiOperation(value = "It will save a Agenda")
 	@PostMapping(path = "/api/v1/agenda/")
-	public Agenda saveAgenda(@RequestBody Agenda agenda) {
+	public Agenda saveAgenda(@RequestBody Agenda agenda) throws IOException, TimeoutException  {
 		return service.save(agenda);
 	}
 

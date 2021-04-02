@@ -19,8 +19,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74bd4761-25ac-4150-8cbc-93625e19af41" name="Default Changelist" comment="">
+    <list default="true" id="74bd4761-25ac-4150-8cbc-93625e19af41" name="Default Changelist" comment="Added Swagger to User service.">
+      <change afterPath="$PROJECT_DIR$/agenda/src/main/java/com/br/service/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agenda/src/main/java/com/br/service/Sender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/src/main/java/com/br/controller/AgendaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/src/main/java/com/br/controller/AgendaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/src/main/java/com/br/service/AgendaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/src/main/java/com/br/service/AgendaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/target/agenda-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/target/agenda-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/target/agenda-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/target/agenda-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/target/classes/com/br/controller/AgendaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/target/classes/com/br/controller/AgendaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/target/classes/com/br/service/AgendaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/target/classes/com/br/service/AgendaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/target/surefire-reports/TEST-com.br.AgendaControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/target/surefire-reports/TEST-com.br.AgendaControllerTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/target/surefire-reports/com.br.AgendaControllerTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/target/surefire-reports/com.br.AgendaControllerTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/ScheduledTasks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/controller/RabbitMQWebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/controller/RabbitMQWebController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/model/AgendaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/model/AgendaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/service/AgendaServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/service/AgendaServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/service/RabbitMQWebService.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/src/main/java/com/br/service/RabbitMQWebService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/target/classes/com/br/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/target/classes/com/br/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbit-mq/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/rabbit-mq/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,18 +69,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/agenda/src/main/java/com/br/service" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\rabbit-mq\src\main\java\com\br\controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\agenda\src\main\java\com\br\service" />
       <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\rabbit-mq\src\main\java\com\br\model" />
       <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\rabbit-mq\src\main\java\com\br\service" />
       <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\rabbit-mq\src\main\java\com\br" />
       <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services" />
-      <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\voting\src\main\java\com\br\service" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\maico\Documents\programacao\assembles-micro-services\rabbit-mq\src\main\java\com\br\controller" />
     </key>
   </component>
   <component name="RunManager">
@@ -133,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617314078890</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added git ignore">
+      <created>1617368119927</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617368119927</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,7 +187,8 @@
     <MESSAGE value="Created save vote and update agenda validating if user already voted and if agenda exist." />
     <MESSAGE value="Refactoring update vote." />
     <MESSAGE value="Added Swagger to User service." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Swagger to User service." />
+    <MESSAGE value="Added git ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added git ignore" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -164,14 +197,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="311" y="135" width="1526" height="750" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614374916395" />
+    <state x="579" y="280" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617367975787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="579" y="280" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1617367975787" />
     <state x="631" y="205" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1614374698116">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="631" y="205" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614374698116" />
-    <state x="292" y="0" key="CommitChangelistDialog2" timestamp="1617314075297">
+    <state x="292" y="0" key="CommitChangelistDialog2" timestamp="1617368144890">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="292" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617314075297" />
+    <state x="292" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617368144890" />
     <state x="634" y="154" key="FileChooserDialogImpl" timestamp="1617281000518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -208,17 +245,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1853" height="312" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614375389675" />
-    <state x="352" y="121" key="Vcs.Push.Dialog.v2" timestamp="1617314087504">
+    <state x="352" y="121" key="Vcs.Push.Dialog.v2" timestamp="1617368122615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="352" y="121" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617314087504" />
-    <state x="228" y="181" width="832" height="812" key="find.popup" timestamp="1617280976790">
+    <state x="352" y="121" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617368122615" />
+    <state x="228" y="181" width="913" height="812" key="find.popup" timestamp="1617393340195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="228" y="181" width="832" height="812" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617280976790" />
-    <state x="453" y="0" width="1009" height="1470" key="search.everywhere.popup" timestamp="1617313734082">
+    <state x="228" y="181" width="913" height="812" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617393340195" />
+    <state x="453" y="0" width="1009" height="1470" key="search.everywhere.popup" timestamp="1617397107564">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="453" y="0" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617313734082" />
+    <state x="453" y="0" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617397107564" />
   </component>
 </project>

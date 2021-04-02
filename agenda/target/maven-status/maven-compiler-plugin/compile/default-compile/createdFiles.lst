@@ -1,6 +1,8 @@
 com\br\Application.class
 com\br\service\AgendaService.class
+com\br\service\Consumer.class
 com\br\model\Agenda.class
 com\br\controller\AgendaController.class
 com\br\repository\AgendaRepository.class
+com\br\service\Sender.class
 com\br\AppException.class

@@ -41,4 +41,10 @@ services:
     ports:
       - "6036:3306"
 
+  rabbitmq:
+    image: rabbitmq:management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
 
