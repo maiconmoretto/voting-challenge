@@ -21,15 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="74bd4761-25ac-4150-8cbc-93625e19af41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/br/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/br/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/br/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/br/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/classes/com/br/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/br/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/classes/com/br/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/classes/com/br/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/surefire-reports/TEST-com.br.UserControllerTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/surefire-reports/TEST-com.br.UserControllerTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/surefire-reports/com.br.UserControllerTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/surefire-reports/com.br.UserControllerTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/user-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/user-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/target/user-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/user-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617234152899</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Swagger to User service.">
+      <created>1617314078890</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617314078890</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,7 +154,8 @@
     <MESSAGE value="Added validation to vote." />
     <MESSAGE value="Created save vote and update agenda validating if user already voted and if agenda exist." />
     <MESSAGE value="Refactoring update vote." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring update vote." />
+    <MESSAGE value="Added Swagger to User service." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Swagger to User service." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -169,10 +168,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="631" y="205" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614374698116" />
-    <state x="292" y="0" key="CommitChangelistDialog2" timestamp="1617234152403">
+    <state x="292" y="0" key="CommitChangelistDialog2" timestamp="1617314075297">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="292" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617234152403" />
+    <state x="292" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1617314075297" />
     <state x="634" y="154" key="FileChooserDialogImpl" timestamp="1617281000518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -209,10 +208,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1853" height="312" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614375389675" />
-    <state x="352" y="121" key="Vcs.Push.Dialog.v2" timestamp="1617234155175">
+    <state x="352" y="121" key="Vcs.Push.Dialog.v2" timestamp="1617314087504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="352" y="121" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617234155175" />
+    <state x="352" y="121" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617314087504" />
     <state x="228" y="181" width="832" height="812" key="find.popup" timestamp="1617280976790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
