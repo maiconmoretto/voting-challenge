@@ -14,6 +14,8 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import com.fasterxml.jackson.databind.Module.SetupContext;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
+import com.br.request.AgendaRequest;
+import com.br.request.AgendaRequestUpdate;
 import com.br.model.Agenda;
 
 @SpringBootTest
@@ -23,11 +25,18 @@ public class AgendaControllerTests {
     @Autowired
     private MockMvc mvc;
 
+    private AgendaRequest agendaRequest;
+
+    private AgendaRequestUpdate agendaRequestUpdate;
+
     private Agenda agenda;
 
     @Before
     public void setup() {
         Agenda agenda = new Agenda();
+        AgendaRequest agendaRequest = new AgendaRequest();
+        AgendaRequestUpdate agendaRequestUpdate = new AgendaRequestUpdate();
+
     }
 
     @Test
@@ -44,7 +53,7 @@ public class AgendaControllerTests {
 
     @Test
     public void save() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.post("/api/v1/agenda/").content(asJsonString(agenda))
+        mvc.perform(MockMvcRequestBuilders.post("/api/v1/agenda/").content(asJsonString(agendaRequest))
                 .contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON));
 
     }
@@ -57,7 +66,7 @@ public class AgendaControllerTests {
 
     @Test
     public void update() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.put("/api/v1/agenda/").content(asJsonString(agenda))
+        mvc.perform(MockMvcRequestBuilders.put("/api/v1/agenda/").content(asJsonString(agendaRequestUpdate))
                 .contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON));
     }
 

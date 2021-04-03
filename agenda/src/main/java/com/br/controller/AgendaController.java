@@ -21,6 +21,8 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
+import com.br.request.AgendaRequest;
+import com.br.request.AgendaRequestUpdate;
 
 @RestController
 public class AgendaController {
@@ -42,14 +44,14 @@ public class AgendaController {
 
 	@ApiOperation(value = "It will save a Agenda")
 	@PostMapping(path = "/api/v1/agenda/")
-	public Agenda saveAgenda(@RequestBody Agenda agenda) throws IOException, TimeoutException  {
-		return service.save(agenda);
+	public Agenda saveAgenda(@RequestBody AgendaRequest request) throws IOException, TimeoutException  {
+		return service.save(request);
 	}
 
 	@ApiOperation(value = "It will update a Agenda")
 	@PutMapping(value = "/api/v1/agenda/")
-	public Agenda update(@RequestBody Agenda agenda) throws  Exception {
-		return service.update(agenda);
+	public Agenda update(@RequestBody AgendaRequestUpdate request) throws  Exception {
+		return service.update(request);
 	}
 
 	@ApiOperation(value = "It will delete a Agenda by Id")

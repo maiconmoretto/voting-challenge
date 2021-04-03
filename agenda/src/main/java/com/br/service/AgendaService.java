@@ -10,6 +10,8 @@ import java.util.concurrent.TimeoutException;
 import com.br.repository.AgendaRepository;
 import com.br.model.Agenda;
 import java.io.IOException;
+import com.br.request.AgendaRequest;
+import com.br.request.AgendaRequestUpdate;
 
 @Service
 public class AgendaService {
@@ -31,19 +33,26 @@ public class AgendaService {
 		return repository.findById(id).get();
 	}
 
-	public Agenda save(Agenda agenda) throws IOException, TimeoutException  {
+	public Agenda save(AgendaRequest request) throws IOException, TimeoutException  {
+		Agenda agenda = new Agenda();
+		agenda.setDuration(request.getDuration());
+		agenda.setDescription(request.getDescription());
+		sender.send(agenda);
+
 		if (agenda.getDuration() == 0) {
 			agenda.setDuration(60);
 		}
-		sender.send(agenda);
 		return repository.save(agenda);
 	}
 
-	public Agenda update(Agenda agenda) throws  Exception {
-		Optional<Agenda> agendaExist = repository.findById(agenda.getId());
+	public Agenda update(AgendaRequestUpdate request) throws  Exception {
+		Optional<Agenda> agendaExist = repository.findById(request.getId());
 		if (!agendaExist.isPresent()) {
 			throw new Exception("Agenda does not exist");
 		}
+		Agenda agenda = new Agenda();
+		agenda.setDuration(request.getDuration());
+		agenda.setDescription(request.getDescription());
 		return repository.save(agenda);
 	}
 

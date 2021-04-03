@@ -1,4 +1,4 @@
-package com.br.model;
+package com.br.request;
 
 import lombok.Data;
 
@@ -8,17 +8,10 @@ import javax.persistence.Id;
 import java.time.LocalDateTime;
 
 @Data
-@Entity
-public class Agenda {
+public class AgendaRequestUpdate {
 
-    @Id
-    @GeneratedValue
     private int id;
     private String description;
-    private LocalDateTime createdAt = LocalDateTime.now();
     private int duration;
-    private int sim = 0;
-    private int nao = 0;
-    private boolean sentToMessager;
 
 }
