@@ -15,6 +15,8 @@ import com.br.model.User;
 import com.fasterxml.jackson.databind.Module.SetupContext;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
+import com.br.request.UserRequest;
+import com.br.request.UserRequestUpdate;
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -24,10 +26,16 @@ public class UserControllerTests {
 	private MockMvc mvc;
 	
 	private User user;
+
+	private UserRequest userRequest;
+
+	private UserRequestUpdate userRequestUpdate;
 	
 	@Before
 	public void setup() {
 		User user = new User();
+		UserRequest userRequest = new UserRequest();
+		UserRequestUpdate userRequestUpdate = new UserRequestUpdate();
 	}
 
 	@Test
@@ -44,7 +52,7 @@ public class UserControllerTests {
 
 	@Test
 	public void save() throws Exception {
-		mvc.perform(MockMvcRequestBuilders.post("/api/v1/user/").content(asJsonString(user))
+		mvc.perform(MockMvcRequestBuilders.post("/api/v1/user/").content(asJsonString(userRequest))
 				.contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON));
 
 	}	
@@ -57,7 +65,7 @@ public class UserControllerTests {
 	
 	@Test
 	public void update() throws Exception {
-		mvc.perform(MockMvcRequestBuilders.put("/api/v1/user/").content(asJsonString(user))
+		mvc.perform(MockMvcRequestBuilders.put("/api/v1/user/").content(asJsonString(userRequestUpdate))
 				.contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON));
 	}
 

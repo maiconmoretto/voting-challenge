@@ -8,7 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-
+import com.br.request.UserRequest;
+import com.br.request.UserRequestUpdate;
 import com.br.repository.UserRepository;
 import com.br.model.User;
 
@@ -26,20 +27,26 @@ public class UserService {
 		return repository.findById(id).get();
 	}
 
-	public ResponseEntity<String> save(User user) {
-		if (!this.isUserAbleTovote(user.getCpf())) {
+	public ResponseEntity<String> save(UserRequest userRequest) {
+		if (!this.isUserAbleTovote(userRequest.getCpf())) {
 			return new ResponseEntity<>("User Unable to vote and can't be registered", HttpStatus.CREATED);
 		}
+		User user = new User();
+		user.setName(userRequest.getName());
+		user.setCpf(userRequest.getCpf());
 		repository.save(user);
 		return new ResponseEntity<>("User successfully registered", HttpStatus.CREATED);
 
 	}
 
-	public ResponseEntity<String> update(User user) {
-		Optional<User> userExist = repository.findById(user.getId());
+	public ResponseEntity<String> update(UserRequestUpdate userRequestUpdate) {
+		Optional<User> userExist = repository.findById(userRequestUpdate.getId());
 		if (!userExist.isPresent()) {
 			return new ResponseEntity<>("User does not exist", HttpStatus.BAD_REQUEST);
 		}
+		User user = new User();
+		user.setName(userRequestUpdate.getName());
+		user.setCpf(userRequestUpdate.getCpf());
 		repository.save(user);
 		return new ResponseEntity<>("User successfully updated", HttpStatus.OK);
 	}

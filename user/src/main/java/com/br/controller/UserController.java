@@ -19,12 +19,15 @@ import com.br.model.User;
 import com.br.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import com.br.request.UserRequest;
+import com.br.request.UserRequestUpdate;
 
 @RestController
 public class UserController {
 
 	@Autowired
 	private UserService service;
+
 
 	@ApiOperation(value = "It will return list of User")
 	@GetMapping("/api/v1/user")
@@ -40,14 +43,14 @@ public class UserController {
 
 	@ApiOperation(value = "It will save a User")
 	@PostMapping(path = "/api/v1/user/")
-	public @ResponseBody ResponseEntity save(@RequestBody User user) {
-		return service.save(user);
+	public @ResponseBody ResponseEntity save(@RequestBody UserRequest request) {
+		return service.save(request);
 	}
 
 	@ApiOperation(value = "It will update a User")
 	@PutMapping(value = "/api/v1/user/{id}")
-	public ResponseEntity<String> update(@RequestBody User user) {
-		return service.update(user);
+	public ResponseEntity<String> update(@RequestBody UserRequestUpdate requestUpdate) {
+		return service.update(requestUpdate);
 	}
 
 	@ApiOperation(value = "It will delete a User by Id")

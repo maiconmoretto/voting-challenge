@@ -2,7 +2,9 @@ com\br\Application.class
 com\br\service\AgendaService.class
 com\br\service\Consumer.class
 com\br\model\Agenda.class
+com\br\request\AgendaRequest.class
 com\br\controller\AgendaController.class
 com\br\repository\AgendaRepository.class
 com\br\service\Sender.class
 com\br\AppException.class
+com\br\request\AgendaRequestUpdate.class

@@ -1,5 +1,7 @@
 com\br\controller\UserController.class
 com\br\Application.class
+com\br\request\UserRequest.class
+com\br\request\UserRequestUpdate.class
 com\br\repository\UserRepository.class
 com\br\service\UserService.class
 com\br\AppException.class
