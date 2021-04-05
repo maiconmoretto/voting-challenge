@@ -37,8 +37,6 @@ public class AgendaService {
 		Agenda agenda = new Agenda();
 		agenda.setDuration(request.getDuration());
 		agenda.setDescription(request.getDescription());
-		sender.send(agenda);
-		agenda.setSentToMessager(true);
 		if (agenda.getDuration() == 0) {
 			agenda.setDuration(60);
 		}
@@ -57,6 +55,24 @@ public class AgendaService {
 		agenda.setDescription(agendaRequestUpdate.getDescription());
 		agenda.setSentToMessager(agendaRequestUpdate.isSentToMessager());
 		agenda.setAgendaClosed(agendaRequestUpdate.isAgendaClosed());
+
+		return repository.save(agenda);
+	}
+
+	public Agenda verifyAllAgendasClosedAndUpdate(AgendaRequestUpdate agendaRequestUpdate) throws  Exception {
+		Optional<Agenda> agendaExist = repository.findById(agendaRequestUpdate.getId());
+		if (!agendaExist.isPresent()) {
+			throw new Exception("Agenda does not exist");
+		}
+
+		Agenda agenda = new Agenda();
+		agenda.setId(agendaRequestUpdate.getId());
+		agenda.setDuration(agendaRequestUpdate.getDuration());
+		agenda.setDescription(agendaRequestUpdate.getDescription());
+		agenda.setSentToMessager(agendaRequestUpdate.isSentToMessager());
+		agenda.setAgendaClosed(agendaRequestUpdate.isAgendaClosed());
+		agenda.setSentToMessager(true);
+		sender.send(agenda);
 
 		return repository.save(agenda);
 	}

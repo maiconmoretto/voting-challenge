@@ -37,7 +37,7 @@ public class ScheduledTasks {
             agendaRequestUpdate.setDuration(agenda.getDuration());
             agendaRequestUpdate.setSentToMessager(agenda.isSentToMessager());
             agendaRequestUpdate.setAgendaClosed(true);
-            agendaService.update(agendaRequestUpdate);
+            agendaService.verifyAllAgendasClosedAndUpdate(agendaRequestUpdate);
         }
     }
 }
