@@ -25,6 +25,7 @@ import com.br.service.VotingService;
 import org.springframework.web.server.ResponseStatusException;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import com.br.request.VotingRequestUpdate;
 
 @RestController
 public class VotingController {
@@ -53,8 +54,8 @@ public class VotingController {
 
     @ApiOperation(value = "It will update a Voting")
     @PutMapping(value = "/api/v1/voting/{id}")
-    public ResponseEntity<String> update(@RequestBody Voting voting) {
-        return service.update(voting);
+    public ResponseEntity<String> update(@RequestBody VotingRequestUpdate votingRequestUpdate) {
+        return service.update(votingRequestUpdate);
     }
 
     @ApiOperation(value = "It will deleve a Voting by id")

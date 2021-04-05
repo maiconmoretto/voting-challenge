@@ -18,6 +18,7 @@ import com.br.repository.VotingRepository;
 import org.springframework.web.client.RestTemplate;
 import java.util.Optional;
 import com.br.service.UserServiceClient;
+import com.br.request.VotingRequestUpdate;
 
 @Service
 public class VotingService {
@@ -145,8 +146,12 @@ public class VotingService {
         }
     }
 
-    public ResponseEntity<String> update(Voting voting) {
+    public ResponseEntity<String> update(VotingRequestUpdate votingRequestUpdate) {
         boolean validateUpdate = true;
+        Voting voting = new Voting();
+        voting.setVote(votingRequestUpdate.getVote());
+        voting.setIdAgenda(votingRequestUpdate.getIdAgenda());
+        voting.setIdUser(votingRequestUpdate.getIdUser());
         this.validate(voting, validateUpdate);
         AgendaDTO agendaDTO;
 
