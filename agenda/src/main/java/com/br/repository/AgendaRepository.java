@@ -17,7 +17,7 @@ public interface AgendaRepository extends JpaRepository<Agenda, Integer>{
 	@Query(value = "SELECT * FROM agenda a WHERE a.id =:id and a.created_at + INTERVAL a.duration SECOND >= NOW()", nativeQuery = true)
 	Agenda agendaOpen(@Param("id") long idAgenda);
 
-	@Query(value = "SELECT * FROM agenda a WHERE a.sent_to_messager = false and a.created_at + INTERVAL a.duration SECOND <= NOW()", nativeQuery = true)
+	@Query(value = "SELECT * FROM agenda a WHERE a.created_at + INTERVAL a.duration SECOND <= NOW()", nativeQuery = true)
 	List<Agenda> agendasClosed();
 
 	@Query(value = "SELECT * FROM agenda a WHERE a.sent_to_messager = false and a.id =:id and a.created_at + INTERVAL a.duration SECOND <= NOW()", nativeQuery = true)

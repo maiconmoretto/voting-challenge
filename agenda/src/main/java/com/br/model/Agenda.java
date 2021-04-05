@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.time.LocalDateTime;
+import lombok.Getter;
+import lombok.Setter;
 
 @Data
 @Entity
@@ -20,5 +22,7 @@ public class Agenda {
     private int sim = 0;
     private int nao = 0;
     private boolean sentToMessager;
+    private boolean agendaClosed;
+
 
 }

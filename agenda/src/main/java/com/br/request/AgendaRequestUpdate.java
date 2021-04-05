@@ -1,11 +1,9 @@
 package com.br.request;
 
 import lombok.Data;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import java.time.LocalDateTime;
+import lombok.Getter;
+import lombok.Setter;
 
 @Data
 public class AgendaRequestUpdate {
@@ -13,5 +11,9 @@ public class AgendaRequestUpdate {
     private int id;
     private String description;
     private int duration;
+    private boolean sentToMessager;
+    private boolean agendaClosed;
+
+
 
 }
