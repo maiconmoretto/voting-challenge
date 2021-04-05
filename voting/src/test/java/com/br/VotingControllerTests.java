@@ -1,4 +1,4 @@
-/*
+
 package com.br;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -104,4 +104,4 @@ public class VotingControllerTests {
 	    }
 	}
 }
-*/
+
